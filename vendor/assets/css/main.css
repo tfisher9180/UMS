@@ -1,0 +1,265 @@
+/*
+ *
+ * GENERAL STYLES ------------
+ * =========================
+ *
+*/
+
+html, body {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;  
+	width: 100%;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+body.login, body.register, body.forgot, body.reset, body.change, body.home {
+	background: #2b5876; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2b5876 , #4e4376); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2b5876 , #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+}
+body.home {
+	overflow: hidden;
+}
+input.form-control {
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 1px;
+	box-shadow: none;
+	height: auto;
+	position: relative;
+}
+input.form-control:focus {
+	outline: 0;
+	border-color: transparent;
+	box-shadow: none;
+}
+.btn-primary {
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	border-radius: 1px;
+	border: 0;
+	background-color: #4e4376;
+	padding: 15px;
+	font-size: 14px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.btn-default {
+	text-align: center;
+	font-size: 14px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color: #2b5876!important;
+	border: 0!important;
+	outline: 0!important;
+}
+.header {
+	text-align: center;
+	color: #3a3a3a;
+	font-weight: 300;
+}
+.has-error .form-control, .has-error .form-control:focus {
+	box-shadow: none;
+	border: 1px solid #e74c3c; /* #ff4444 */
+}
+.form-inline {
+	padding: 0;
+}
+.form-inline:first-child {
+	padding-right: 3px;
+}
+.form-inline:last-child {
+	padding-left: 3px;
+}
+.form-inline .form-control {
+	width: 100%;
+	margin-bottom: 0;
+}
+#fname-error, #lname-error {
+	text-align: left!important;
+}
+.btn-rounded {
+	border-radius: 100px;
+}
+.form-control-feedback {
+	line-height: 50px;
+}
+.fade-in-form-message {
+	display: none;
+	text-align: left;
+}
+.has-success .form-control:focus, .has-success .form-control {
+	box-shadow: none;
+}
+.has-success .form-control {
+	border: 1px solid #3c763d;
+}
+.narrow {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+/*
+ * =========================
+ *
+ * END GENERAL STYLES ------------
+ *
+*/
+
+
+
+/*
+ *
+ * LOGIN/REGISTRATION STYLES ------------
+ * =========================
+ *
+*/
+
+#login-box, #register-box, #forgot-box, #reset-box, #change-box {
+	width: 80%;
+	background-color: #fff;
+	margin: 0 auto;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	text-align: center;
+  	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  	padding: 45px;
+}
+.form-inline span {
+	text-align: left!important;
+}
+#login-box .header, #register-box .header, #forgot-box .header, #reset-box .header, #change-box .header {
+	margin-top: -22.5px;
+	margin-bottom: 22.5px;
+}
+.form-text {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+.form-text a {
+	color: #2b5876;
+	text-decoration: none;
+}
+.forgot-my-password a {
+	color: #b3b3b3!important;
+}
+@media (min-width: 992px) {
+	#login-box, #register-box, #forgot-box, #reset-box, #change-box {
+		width: 480px;
+	}
+}
+@media (max-width: 992px) {
+	.form-inline {
+		margin-top: 15px;
+	}
+}
+
+/*
+ * =========================
+ *
+ * END LOGIN/REGISTRATION STYLES ------------
+ *
+*/
+
+
+
+/*
+ *
+ * HOME STYLES ------------
+ * =========================
+ *
+*/
+
+#home-page {
+	position: absolute;
+	top: 40%;
+	transform: translate(0, -50%);
+	color: #fff;
+}
+.buttons {
+	display: block;
+	margin-top: 20px;
+}
+.buttons .btn:first-child {
+	margin-right: 5px;
+}
+.buttons .btn:last-child {
+	margin-left: 5px;
+}
+.buttons .btn-rounded {
+	display: inline-block;
+	height: 38px;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 11px;
+	line-height: 38px;
+	letter-spacing: 0.1rem;
+	white-space: nowrap;
+}
+.btn-outline {
+	background-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+}
+.btn-outline:hover {
+	background-color: transparent!important;
+	border-width: 1px!important;
+	border-style: solid!important;
+}
+.cat-column {
+	display: none;
+	position: absolute;
+	right: 0; 
+	top: 50%; 
+	bottom: 0; 
+	transform: translate(0, -50%);
+}
+@media (min-width: 768px) {
+	#home-page {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
+	#home-page .col-md-12 {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
+	#home-page {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+/*
+ * =========================
+ *
+ * END HOME STYLES ------------
+ *
+*/

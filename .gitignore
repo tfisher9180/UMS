@@ -1,0 +1,33 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# for vendor folder
+# adding trailing /* will include the vendor folder, however ignore all subfolders
+# make an exception to our custom assets folder our CSS/JS/IMG etc
+# http://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+/vendor/*
+!/vendor/assets/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
